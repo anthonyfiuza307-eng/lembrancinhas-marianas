@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acervo de Lembrancinhas Católicas | Todas as Nossas Senhoras & Menino Jesus</title>
+    <meta name="description" content="Acesse o acervo completo de moldes em PDF para produzir Mini Bíblias, marca-páginas e mimos religiosos em menos de 3 minutos por peça.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sacred: {
+                            bg: '#FAF8F5',
+                            card: '#FFFFFF',
+                            primary: '#162A45',
+                            gold: '#C59B27',
+                            cta: '#D4A017',
+                            'cta-hover': '#C59210',
+                            border: 'rgba(197, 155, 39, 0.25)',
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Botões de Ação Padronizados, Encorpados e de Alto Impacto */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #D4A017;
+            color: #162A45;
+            font-size: 1.1rem;
+            line-height: 1.3;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            padding: 18px 36px;
+            border-radius: 12px;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 10px 25px -4px rgba(212, 160, 23, 0.45), 0 4px 10px -2px rgba(22, 42, 69, 0.15);
+            text-align: center;
+            min-height: 58px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background-color: #C59210;
+            color: #0D1B2D;
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px -4px rgba(212, 160, 23, 0.6), 0 6px 14px -2px rgba(22, 42, 69, 0.2);
+        }
+        .plan-basic-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #162A45;
+            color: #FFFFFF;
+            font-size: 1.05rem;
+            line-height: 1.3;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            padding: 18px 32px;
+            border-radius: 12px;
+            transition: all 0.25s ease-in-out;
+            box-shadow: 0 8px 20px -3px rgba(22, 42, 69, 0.25);
+            text-align: center;
+            min-height: 58px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .plan-basic-btn:hover {
+            background-color: #0F1E32;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -3px rgba(22, 42, 69, 0.35);
+        }
+        .sacred-hero-bg {
+            background-color: #162A45;
+            background-image: radial-gradient(rgba(197, 155, 39, 0.10) 1px, transparent 1px), radial-gradient(rgba(255, 255, 255, 0.03) 1px, #162A45 1px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+        }
+        .delicate-shadow {
+            box-shadow: 0 4px 20px -2px rgba(22, 42, 69, 0.06), 0 2px 6px -1px rgba(22, 42, 69, 0.03);
+        }
+        /* Modal Transition */
+        #upsell-modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        #upsell-modal.active {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+        #upsell-modal:not(.active) {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        #upsell-modal .modal-card {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        #upsell-modal.active .modal-card {
+            transform: scale(1) translateY(0);
+        }
+        #upsell-modal:not(.active) .modal-card {
+            transform: scale(0.95) translateY(12px);
+        }
+    </style>
+
+<script>
+(function(){
+  var K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id','src','sck','fbclid','gclid','ttclid'];
+  var S='nexofy_utm',TTL=2592000000;
+  function save(o){
+    try{localStorage.setItem(S,JSON.stringify({t:Date.now(),v:o}))}catch(e){}
+    try{document.cookie=S+'='+encodeURIComponent(JSON.stringify(o))+';path=/;max-age=2592000;SameSite=Lax'}catch(e){}
+  }
+  function read(){
+    try{var r=JSON.parse(localStorage.getItem(S)||'null');if(r&&r.v&&Date.now()-r.t<TTL)return r.v}catch(e){}
+    var m=document.cookie.match('(?:^|; )'+S+'=([^;]*)');
+    if(m){try{return JSON.parse(decodeURIComponent(m[1]))}catch(e){}}
+    return {};
+  }
+  function fromUrl(){
+    var q=new URLSearchParams(location.search),o={};
+    K.forEach(function(k){var v=q.get(k);if(v)o[k]=v});
+    return o;
+  }
+  var incoming=fromUrl();
+  var data=Object.keys(incoming).length?incoming:read();
+  if(Object.keys(incoming).length)save(incoming);
+  window.nexofyUtm=data;
+  if(!Object.keys(data).length)return;
+  function link(a){
+    var h=a.getAttribute('href');
+    if(!h||/^(#|mailto:|tel:|javascript:)/i.test(h))return;
+    var u;try{u=new URL(h,location.href)}catch(e){return}
+    if(u.protocol!=='http:'&&u.protocol!=='https:')return;
+    var changed=false;
+    K.forEach(function(k){if(data[k]&&!u.searchParams.get(k)){u.searchParams.set(k,data[k]);changed=true}});
+    if(changed)a.setAttribute('href',u.toString());
+  }
+  function form(f){
+    if(f.getAttribute('data-nexofy'))return;
+    f.setAttribute('data-nexofy','1');
+    K.forEach(function(k){
+      if(!data[k]||f.querySelector('[name="'+k+'"]'))return;
+      var i=document.createElement('input');i.type='hidden';i.name=k;i.value=data[k];f.appendChild(i);
+    });
+  }
+  function apply(){
+    var a=document.getElementsByTagName('a');for(var i=0;i<a.length;i++)link(a[i]);
+    var f=document.getElementsByTagName('form');for(var j=0;j<f.length;j++)form(f[j]);
+  }
+  apply();
+  document.addEventListener('DOMContentLoaded',apply);
+  document.addEventListener('click',function(e){
+    var t=e.target;
+    while(t&&t.tagName!=='A')t=t.parentElement;
+    if(t)link(t);
+  },true);
+  if(window.MutationObserver)new MutationObserver(apply).observe(document.documentElement,{childList:true,subtree:true});
+})();
+</script>
+
+<!-- Meta Pixel · NexoFy -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1355838073247780');
+  fbq('init', '1672036344546077');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1355838073247780&ev=PageView&noscript=1"/><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1672036344546077&ev=PageView&noscript=1"/></noscript>
+<script src="https://appnexofy.com.br/nexofy.js"
+        data-public-key="cmv8ssks300e3jy06tic3x562"
+        data-auto-page-view="true"></script>
+</head>
+<body class="bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-[#C59B27] selection:text-white pt-11 sm:pt-12">
+
+    <!-- URGENCY TOP BAR (ÚNICO TIMER FIXO NO TOPO) -->
+    <aside aria-label="Aviso de urgência" class="fixed top-0 left-0 right-0 z-50 w-full bg-[#162A45] text-white py-2.5 px-4 text-center border-b border-[#C59B27]/40 shadow-md">
+        <div class="max-w-4xl mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap text-xs sm:text-sm font-semibold">
+            <span class="inline-flex items-center gap-1.5 text-white">
+                ⏱️ Último dia para garantir
+            </span>
+            <span class="text-[#C59B27]">•</span>
+            <div class="inline-flex items-center gap-1.5 bg-black/40 border border-[#C59B27]/50 px-2.5 py-0.5 rounded-full font-mono text-xs sm:text-sm text-[#F5CF64] tracking-wider font-bold">
+                <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
+                    <polyline points="12 6 12 12 16 14" stroke-width="2"></polyline>
+                </svg>
+                <span class="timer-display">00h 00m 00s</span>
+            </div>
+        </div>
+    </aside>
+
+    <!-- HERO SECTION -->
+    <header class="relative sacred-hero-bg text-white pt-14 pb-20 md:pt-20 md:pb-24 border-b-2 border-[#C59B27] text-center">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center">
+
+            <!-- Headline -->
+            <h1 class="font-cinzel text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight sm:leading-tight text-white max-w-4xl mx-auto">
+                Surpreenda na próxima missa, novena ou encontro religioso com <span class="text-[#F5CF64]">lembrancinhas feitas por você!</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="mt-6 text-lg sm:text-xl text-gray-200 font-normal max-w-2xl mx-auto leading-relaxed">
+                Tenha acesso imediato ao acervo completo com <strong class="text-white font-semibold underline decoration-[#C59B27] underline-offset-4">Todas as Nossas Senhoras</strong> + <strong class="text-white font-semibold underline decoration-[#C59B27] underline-offset-4">Coleção Especial Menino Jesus</strong>.
+            </p>
+
+            <!-- Integrated Benefit (Sem o termo "Grande Promessa") -->
+            <div class="mt-8 max-w-3xl mx-auto bg-white/5 border border-[#C59B27]/40 rounded-2xl p-6 sm:p-7 text-center">
+                <p class="text-base sm:text-lg text-gray-100 leading-relaxed max-w-2xl mx-auto">
+                    Produza Mini Bíblias, marca-páginas e mimos religiosos dignos de loja especializada em <strong class="text-white font-bold bg-[#C59B27]/25 px-2 py-0.5 rounded border border-[#C59B27]/40">menos de 3 minutos por peça</strong>, resgatando o verdadeiro sentido da fé e do Natal sem pesar no seu bolso.
+                </p>
+            </div>
+
+            <!-- CTA Button Encorpado Hero -->
+            <div class="mt-9 flex flex-col items-center justify-center gap-3 w-full">
+                <a href="#planos" class="cta-button w-full sm:w-auto max-w-lg">
+                    QUERO BAIXAR MEUS MOLDES AGORA
+                </a>
+                
+                <p class="text-xs text-gray-300 flex items-center justify-center gap-2 mt-1">
+                    <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-width="2"></path>
+                    </svg>
+                    Acesso Imediato no E-mail • Formato PDF Pronto para Imprimir
+                </p>
+            </div>
+
+            <!-- Mockup do Acervo Transparente e Integrado (Sem Fundo, Sem Bordas) -->
+            <div class="mt-10 sm:mt-12 mb-4 sm:mb-6 w-full max-w-3xl mx-auto flex justify-center bg-transparent">
+                <img src="mockup-acervo.png" 
+                     alt="Mockup do Acervo de Lembrancinhas Católicas - Nossas Senhoras, Menino Jesus, Mini Bíblias e Marca-Páginas" 
+                     class="w-full max-w-[750px] md:max-w-[85%] lg:max-w-[750px] h-auto object-contain mx-auto bg-transparent border-0 shadow-none block" 
+                     style="background: transparent;"
+                     loading="eager" />
+            </div>
+
+        </div>
+    </header>
+
+    <!-- SECTION: DORES (PADRONIZAÇÃO TOTAL DAS 6 CAIXAS) -->
+    <section class="py-16 md:py-24 bg-[#FAF8F5]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-white inline-block mb-3">
+                    Você se identifica?
+                </span>
+                <h2 class="font-cinzel text-2xl sm:text-3xl md:text-4xl font-bold text-[#162A45]">
+                    Fazer lembrancinhas de fé não precisa ser difícil nem caro
+                </h2>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <!-- Grade Padronizada: 6 Caixas Rigorosamente Iguais -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                
+                <!-- Caixa 1 -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">I</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">Preço Alto no Comércio</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Quer presentear com amor e carinho, mas lembrancinha pronta sai caro demais para fazer em quantidade na paróquia.
+                    </p>
+                </div>
+
+                <!-- Caixa 2 -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">II</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">Sem Habilidade para Design</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Não sabe desenhar nem editar no computador, e passa horas na internet sem achar modelos bonitos e com respeito litúrgico.
+                    </p>
+                </div>
+
+                <!-- Caixa 3 -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">III</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">O Prazo Apertado</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        A festa da padroeira ou a novena está chegando, os dias estão correndo e você ainda não tem nada preparado.
+                    </p>
+                </div>
+
+                <!-- Caixa 4 -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">IV</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">Muitos Fiéis para Lembrar</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Tem muita gente para agradecer (catequese, coordenadores, familiares), e o orçamento simplesmente não dá.
+                    </p>
+                </div>
+
+                <!-- Caixa 5 -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">V</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">Frustração com o Acabamento</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Já fez lembrancinha feia ou improvisada e ficou com vergonha de entregar na mão dos fiéis e convidados.
+                    </p>
+                </div>
+
+                <!-- Caixa 6 (Padronizada com mesmo fundo, borda e estilo) -->
+                <div class="bg-white rounded-2xl p-7 border border-[#C59B27]/25 delicate-shadow flex flex-col items-center justify-start transition-all hover:border-[#C59B27]">
+                    <div class="w-11 h-11 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                        <span class="font-cinzel font-bold text-sm">VI</span>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-base sm:text-lg text-[#162A45] mb-2">A Solução Definitiva</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Agora imagine ter vários modelos profissionais prontinhos para utilizar e imprimir sempre que precisar!
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: O QUE VOCÊ VAI RECEBER -->
+    <section class="py-16 md:py-24 bg-white border-y border-[#C59B27]/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-[#FAF8F5] inline-block mb-3">
+                    Acervo Completo
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-[#162A45]">
+                    O que você vai receber imediatamente
+                </h2>
+                <p class="mt-4 text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                    Ao garantir seu acesso hoje, você recebe imediatamente no seu e-mail o link para baixar o acervo completo em <strong>PDF de alta resolução</strong> (pronto para imprimir em casa ou enviar pelo WhatsApp para qualquer gráfica):
+                </p>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                
+                <!-- Card 1 -->
+                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="9" stroke-width="1.5"></circle>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v10m-4-7h8"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Coleção Completa</span>
+                        <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Todas as Nossas Senhoras</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Modelos exclusivos homenageando as principais invocações marianas (Nossa Senhora Aparecida, Fátima, Graças, Carmo, Guadalupe, Nazaré e muito mais).
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Formato PDF A4 • Alta Resolução</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2l3 7h7l-5.5 4.5 2 7-6.5-5-6.5 5 2-7L2 9h7l3-7z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Coleção Especial</span>
+                        <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Natal do Menino Jesus</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Lembrancinhas natalinas delicadas criadas para celebrar o verdadeiro sentido do Natal em família, na missa do galo ou nas confraternizações.
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Ideal para a Missa do Galo</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Modelos Devocionais</span>
+                        <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Mini Bíblias Devocionais</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Pequenas réplicas encantadoras com mensagens bíblicas e orações prontas no interior. Montagem rápida com linhas demarcadas.
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Montagem em ~3 Minutos</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
+                    <div class="flex flex-col items-center">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 3h10a2 2 0 012 2v16l-7-4-7 4V5a2 2 0 012-2z"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Artes Exclusivas</span>
+                        <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Marca-Páginas Católicos</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Modelos elegantes com artes exclusivas e frases de fé para acompanhar bíblias, missais e livros de oração. Vários por página.
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Econômico e Elegante</span>
+                </div>
+
+                <!-- Card 5 (Dupla largura centralizado) -->
+                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between md:col-span-2 lg:col-span-2">
+                    <div class="flex flex-col items-center max-w-xl mx-auto">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                            </svg>
+                        </div>
+                        <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Moldes Práticos Estruturados</span>
+                        <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Caixinhas e Suportes para Mimos</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                            Moldes estruturados perfeitos para colocar bombons, terços ou mensagens de carinho. Fáceis de dobrar e encaixar, com linhas de vinco perfeitas.
+                        </p>
+                    </div>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Ideal para Terços e Doces</span>
+                </div>
+
+            </div>
+
+            <!-- Botão Centralizado Encorpado -->
+            <div class="mt-12 flex justify-center">
+                <a href="#planos" class="cta-button w-full sm:w-auto max-w-lg">
+                    QUERO MEU ACERVO DE MOLDES AGORA
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: PARA QUEM É -->
+    <section class="py-16 md:py-24 bg-[#FAF8F5]">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-white inline-block mb-3">
+                    Propósito e Fé
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-[#162A45]">
+                    Para quem é este acervo?
+                </h2>
+                <p class="text-gray-600 mt-3 text-base">
+                    Este acervo foi criado especialmente para:
+                </p>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+                
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v20m-5-14h10M4 22h16"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Membros de Paróquia</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Quem participa da paróquia e quer presentear os fiéis depois da missa.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Catequese</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Catequistas e coordenadores de catequese que buscam encantar os alunos e famílias.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Grupos de Oração</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Grupos de oração e novenas que desejam acolher cada participante com carinho.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.18L12 21z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Festa da Padroeira</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Quem organiza a festa da padroeira e quer oferecer mimos inesquecíveis.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2l3 7h7l-5.5 4.5 2 7-6.5-5-6.5 5 2-7L2 9h7l3-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Natal com Sentido</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Quem quer uma lembrancinha de Natal com verdadeiro sentido cristão.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-[#C59B27]/25 delicate-shadow flex flex-col items-center">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-[#162A45] text-base mb-1">Fé Sem Pesar no Bolso</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm leading-relaxed">
+                        Quem quer demonstrar fé e carinho sem gastar muito dinheiro.
+                    </p>
+                </div>
+
+                <!-- Oportunidade de Venda Comunitária -->
+                <div class="sm:col-span-2 lg:col-span-3 bg-white p-6 rounded-2xl border border-[#C59B27] delicate-shadow flex flex-col items-center max-w-2xl mx-auto">
+                    <div class="w-10 h-10 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-3">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-cinzel font-bold text-[#162A45] text-lg mb-1">Produção e Renda Extra</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed max-w-xl">
+                        Quem quer produzir e vender as peças físicas prontas para a comunidade, bazar da paróquia ou encomendas de Natal.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: PROVAS SOCIAIS -->
+    <section class="py-16 md:py-24 bg-[#162A45] text-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#F5CF64] border border-[#C59B27]/50 px-3.5 py-1 rounded-full bg-white/5 inline-block mb-3">
+                    Provas Sociais
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-white">
+                    Histórias de quem já imprimiu e aprovou
+                </h2>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                
+                <!-- Depoimento 1 -->
+                <div class="bg-white/5 rounded-2xl p-7 border border-[#C59B27]/30 flex flex-col items-center justify-between">
+                    <div>
+                        <div class="flex text-[#F5CF64] text-xs justify-center gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-gray-200 text-sm italic leading-relaxed">
+                            "Eu imprimi 40 unidades do Menino Jesus e das Nossas Senhoras para entregar no encerramento da catequese. As mães ficaram encantadas achando que eu tinha comprado fora! O custo não deu nem R$ 15,00 no total."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 w-full text-center">
+                        <h3 class="font-bold text-sm text-white">Maria Helena</h3>
+                        <p class="text-xs text-[#F5CF64]">Catequista</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 2 -->
+                <div class="bg-white/5 rounded-2xl p-7 border border-[#C59B27]/30 flex flex-col items-center justify-between">
+                    <div>
+                        <div class="flex text-[#F5CF64] text-xs justify-center gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-gray-200 text-sm italic leading-relaxed">
+                            "Não tenho impressora em casa, só mandei o PDF no WhatsApp da gráfica aqui perto, busquei no mesmo dia e montei tudo assistindo novela. Ficou perfeito e super delicado."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 w-full text-center">
+                        <h3 class="font-bold text-sm text-white">Cláudia Ferreira</h3>
+                        <p class="text-xs text-[#F5CF64]">Ministra da Eucaristia</p>
+                    </div>
+                </div>
+
+                <!-- Depoimento 3 -->
+                <div class="bg-white/5 rounded-2xl p-7 border border-[#C59B27]/30 flex flex-col items-center justify-between">
+                    <div>
+                        <div class="flex text-[#F5CF64] text-xs justify-center gap-1 mb-4">
+                            ★★★★★
+                        </div>
+                        <p class="text-gray-200 text-sm italic leading-relaxed">
+                            "Fiz um kit com as Mini Bíblias e os marca-páginas para vender no grupo da paróquia neste Natal. Em dois dias vendi tudo que tinha imprimido e já paguei o investimento dez vezes!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 w-full text-center">
+                        <h3 class="font-bold text-sm text-white">Fernanda Alves</h3>
+                        <p class="text-xs text-[#F5CF64]">Artesã</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: BÔNUS EXCLUSIVOS (SEM IMAGENS GENÉRICAS + PRECIFICAÇÃO DETALHADA) -->
+    <section class="py-16 md:py-24 bg-[#FAF8F5]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-white inline-block mb-3">
+                    Bônus Exclusivos
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-[#162A45]">
+                    Liberados Hoje Gratuitamente
+                </h2>
+                <p class="text-gray-600 mt-3 text-base">
+                    Além de todas as coleções principais, garantindo sua vaga hoje você leva gratuitamente 3 aceleradores:
+                </p>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <!-- Cards Minimalistas focados na tipografia -->
+            <div class="space-y-5 text-center">
+                
+                <!-- Bônus 1 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center text-center">
+                    <div class="flex flex-wrap items-center justify-center gap-2 mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] bg-[#FAF8F5] border border-[#C59B27]/30 px-2.5 py-0.5 rounded-full">
+                            BÔNUS 1
+                        </span>
+                        <span class="text-xs text-gray-400 font-medium">
+                            de <span class="line-through">R$ 47,00</span>
+                        </span>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                            Grátis Hoje
+                        </span>
+                    </div>
+
+                    <h3 class="font-cinzel text-lg sm:text-xl font-bold text-[#162A45]">
+                        Pack Etiquetas e Tags de Natal Cristão
+                    </h3>
+
+                    <p class="text-gray-700 text-sm mt-2 max-w-2xl">
+                        <strong>Benefício:</strong> Tags prontas com frases como "Jesus é o verdadeiro motivo do Natal" para amarrar em panetones, doces e presentes da família.
+                    </p>
+
+                    <p class="text-gray-500 text-xs mt-2 max-w-2xl italic">
+                        <strong>Motivo para existir:</strong> Para que até os presentes que você comprar prontos carreguem a identidade cristã da sua família sem você gastar com cartões caros.
+                    </p>
+                </div>
+
+                <!-- Bônus 2 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center text-center">
+                    <div class="flex flex-wrap items-center justify-center gap-2 mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] bg-[#FAF8F5] border border-[#C59B27]/30 px-2.5 py-0.5 rounded-full">
+                            BÔNUS 2
+                        </span>
+                        <span class="text-xs text-gray-400 font-medium">
+                            de <span class="line-through">R$ 37,00</span>
+                        </span>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                            Grátis Hoje
+                        </span>
+                    </div>
+
+                    <h3 class="font-cinzel text-lg sm:text-xl font-bold text-[#162A45]">
+                        Cartões de Oração para Cantinho da Fé
+                    </h3>
+
+                    <p class="text-gray-700 text-sm mt-2 max-w-2xl">
+                        <strong>Benefício:</strong> Artes em tamanho postal com orações consagradas (Ave Maria, Santo Anjo, Oração da Família) para emoldurar ou distribuir aos doentes e idosos.
+                    </p>
+
+                    <p class="text-gray-500 text-xs mt-2 max-w-2xl italic">
+                        <strong>Motivo para existir:</strong> Muitas vezes você precisa apenas de um cartão rápido de visitação pastoral que não exige nem recorte nem colagem.
+                    </p>
+                </div>
+
+                <!-- Bônus 3 -->
+                <div class="bg-white rounded-2xl p-6 sm:p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center text-center">
+                    <div class="flex flex-wrap items-center justify-center gap-2 mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#C59B27] bg-[#FAF8F5] border border-[#C59B27]/30 px-2.5 py-0.5 rounded-full">
+                            BÔNUS 3
+                        </span>
+                        <span class="text-xs text-gray-400 font-medium">
+                            de <span class="line-through">R$ 36,00</span>
+                        </span>
+                        <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                            Grátis Hoje
+                        </span>
+                    </div>
+
+                    <h3 class="font-cinzel text-lg sm:text-xl font-bold text-[#162A45]">
+                        Guia de Lucro Rápido — Como Vender Kits Católicos no Natal
+                    </h3>
+
+                    <p class="text-gray-700 text-sm mt-2 max-w-2xl">
+                        <strong>Benefício:</strong> Tabela simples de precificação e modelos de mensagens prontas para divulgar as lembrancinhas já montadas no WhatsApp da igreja e do bairro.
+                    </p>
+
+                    <p class="text-gray-500 text-xs mt-2 max-w-2xl italic">
+                        <strong>Motivo para existir:</strong> Se você quiser transformar esse acervo em fonte de renda extra ainda nesta semana, já sabe exatamente quanto cobrar para ter lucro alto.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bloco de Resumo em Destaque Obrigatório -->
+            <div class="mt-8 bg-white border-2 border-[#C59B27] rounded-2xl p-5 sm:p-6 text-center delicate-shadow max-w-2xl mx-auto">
+                <span class="text-xs font-bold text-[#C59B27] uppercase tracking-widest block mb-1">
+                    Economia Total nos Bônus
+                </span>
+                <p class="font-cinzel text-xl sm:text-2xl md:text-3xl font-extrabold text-[#162A45]">
+                    Somente por hoje: de R$ 120,00 por R$ 0,00
+                </p>
+                <p class="text-xs text-gray-500 mt-1">
+                    Liberados sem nenhum custo extra no Plano Completo
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION: PLANOS DE ACESSO -->
+    <section id="planos" class="py-16 md:py-24 bg-white border-t border-[#C59B27]/20">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <div class="max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-[#FAF8F5] inline-block mb-3">
+                    Planos
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl md:text-5xl font-bold text-[#162A45]">
+                    Escolha a melhor opção para você
+                </h2>
+                <p class="text-gray-600 mt-3 text-base">
+                    Comece a imprimir hoje mesmo com download imediato:
+                </p>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <!-- Tabela Comparativa de Planos Centralizada -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto text-center">
+                
+                <!-- PLANO BÁSICO -->
+                <div class="bg-[#FAF8F5] rounded-3xl p-7 sm:p-8 border border-gray-300 flex flex-col justify-between delicate-shadow">
+                    <div>
+                        <div class="pb-6 border-b border-gray-200">
+                            <h3 class="font-cinzel text-xl font-bold text-[#162A45]">PLANO BÁSICO</h3>
+                            <p class="text-xs uppercase tracking-wider text-gray-500 mt-1 font-semibold">Acesso Essencial</p>
+                            
+                            <div class="mt-4">
+                                <span class="text-xs text-gray-500 block">Investimento:</span>
+                                <div class="flex items-baseline justify-center gap-1 mt-1">
+                                    <span class="text-lg font-bold text-gray-600">R$</span>
+                                    <span class="text-4xl font-extrabold text-[#162A45]">12,90</span>
+                                </div>
+                                <span class="text-xs text-gray-500 mt-1 block">pagamento único</span>
+                            </div>
+                        </div>
+
+                        <!-- Lista de Itens -->
+                        <ul class="py-6 space-y-3 text-sm text-gray-700 text-center">
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-emerald-600 font-bold">✓</span>
+                                <span>Coleção Todas as Nossas Senhoras (PDF)</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-emerald-600 font-bold">✓</span>
+                                <span>Coleção Especial Natal do Menino Jesus (PDF)</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-emerald-600 font-bold">✓</span>
+                                <span>Mini Bíblias e Marca-Páginas</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-emerald-600 font-bold">✓</span>
+                                <span>Acesso por 3 meses</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2 text-gray-400 line-through">
+                                <span>Sem os 3 Bônus Exclusivos</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2 text-gray-400 line-through">
+                                <span>Sem Acesso Vitalício</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 flex flex-col items-center">
+                        <!-- Intercepta clique para abrir popup de upsell -->
+                        <button type="button" id="btn-open-upsell" class="plan-basic-btn w-full max-w-md">
+                            QUERO O PLANO BÁSICO
+                        </button>
+                        <p class="text-[11px] text-gray-500 text-center mt-2">Acesso por 3 meses • Download Imediato</p>
+                    </div>
+                </div>
+
+                <!-- PLANO COMPLETO (DESTAQUE) -->
+                <div class="bg-[#162A45] text-white rounded-3xl p-7 sm:p-8 border-2 border-[#C59B27] flex flex-col justify-between shadow-2xl relative transform md:-translate-y-2">
+                    
+                    <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#D4A017] text-[#162A45] text-[11px] font-extrabold px-4 py-1 rounded-full uppercase tracking-wider shadow-md whitespace-nowrap">
+                        ⭐ MAIS ESCOLHIDO
+                    </div>
+
+                    <div>
+                        <div class="pb-6 border-b border-white/10 mt-1">
+                            <h3 class="font-cinzel text-xl font-bold text-white">PLANO COMPLETO</h3>
+                            <p class="text-xs uppercase tracking-wider text-[#F5CF64] mt-1 font-semibold">Acervo Vitalício + Todos os Bônus</p>
+                            
+                            <div class="mt-4">
+                                <span class="text-xs text-gray-300 block">Investimento:</span>
+                                <div class="flex items-baseline justify-center gap-1 mt-1">
+                                    <span class="text-lg font-bold text-[#F5CF64]">R$</span>
+                                    <span class="text-4xl font-extrabold text-white">24,90</span>
+                                </div>
+                                <span class="text-xs text-[#F5CF64] mt-1 block">
+                                    pagamento único (menos de R$ 0,83 por dia no primeiro mês)
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Lista de Itens -->
+                        <ul class="py-6 space-y-3 text-sm text-gray-200 text-center">
+                            <li class="flex items-center justify-center gap-2 font-semibold text-white">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>TUDO do Plano Básico incluído</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>BÔNUS 1: Pack Etiquetas e Tags de Natal Cristão</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>BÔNUS 2: Cartões de Oração para Cantinho da Fé</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>BÔNUS 3: Guia de Lucro Rápido para Vender Kits</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>Manual Rápido de Impressão Econômica</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2 font-semibold text-white">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>Acesso Vitalício (baixe e imprima quando quiser)</span>
+                            </li>
+                            <li class="flex items-center justify-center gap-2 text-xs text-[#F5CF64]">
+                                <span class="text-[#F5CF64] font-bold">✓</span>
+                                <span>Atualizações gratuitas com novos santos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="pt-4 flex flex-col items-center">
+                        <a href="#checkout-completo" class="cta-button w-full max-w-md">
+                            QUERO O PLANO COMPLETO COM TODOS OS BÔNUS
+                        </a>
+                        <p class="text-[11px] text-gray-300 text-center mt-2">
+                            Acesso Vitalício • Garantia de 7 Dias
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: GARANTIA (7 DIAS) -->
+    <section class="py-14 bg-[#FAF8F5] border-t border-[#C59B27]/20 text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-7 sm:p-9 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center">
+                <div class="w-14 h-14 rounded-full border border-[#C59B27] bg-[#FAF8F5] text-[#C59B27] flex items-center justify-center mb-4">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                    </svg>
+                </div>
+                
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] mb-1">Garantia</span>
+                <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-[#162A45]">
+                    7 dias de garantia incondicional
+                </h3>
+                
+                <p class="text-gray-600 text-sm sm:text-base mt-3 leading-relaxed max-w-xl">
+                    Baixe, imprima e monte. Se não gostar, é só pedir o reembolso dentro de 7 dias. Sem perguntas e sem burocracia. O risco é todo nosso.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: FAQ (PERGUNTAS FREQUENTES) -->
+    <section class="py-16 md:py-24 bg-white border-t border-[#C59B27]/20 text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-[#FAF8F5] inline-block mb-3">
+                    Dúvidas Frequentes
+                </span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl font-bold text-[#162A45]">
+                    Perguntas Frequentes
+                </h2>
+                <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="space-y-3.5 text-left" id="faq-accordion">
+                
+                <!-- FAQ 1 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>1. Vou receber algo pelos Correios?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Não. O produto é 100% digital em formato PDF de alta qualidade. Assim que o pagamento é confirmado, você recebe o acesso imediato no seu e-mail para baixar no celular ou computador e imprimir na hora que quiser.
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>2. Não tenho impressora em casa. Consigo usar?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Com certeza! Basta salvar o arquivo no seu celular e enviar pelo WhatsApp para qualquer gráfica rápida, papelaria ou lan house do seu bairro. Sai super barato e a qualidade fica impecável.
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>3. Preciso de algum programa especial para abrir os arquivos?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Não. Os arquivos estão em PDF universal. Abrem direto em qualquer celular (Android ou iPhone), tablet ou computador com um toque.
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>4. Qual papel devo usar para imprimir?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Você pode imprimir em papel sulfite comum (75g) se quiser gastar o mínimo possível, ou em papel mais firme como Offset 180g, Papel Fotográfico ou Vergê para um acabamento de papelaria fina. No nosso manual explicamos qual fica melhor para cada modelo.
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>5. Sou péssima com artesanato. Vou conseguir montar?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Sim. Todos os moldes possuem linhas tracejadas exatas indicando onde passar a tesoura e onde dobrar. Você só precisa de uma tesoura comum e cola branca ou bastão.
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>6. Posso imprimir quantas vezes eu quiser?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Sim! Uma vez que os arquivos são seus, você pode imprimir 10, 100 ou 1.000 cópias ao longo dos anos sem pagar nenhuma taxa extra.
+                    </div>
+                </div>
+
+                <!-- FAQ 7 -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden bg-[#FAF8F5]">
+                    <button class="faq-btn w-full px-5 py-4 text-left font-bold text-sm sm:text-base text-[#162A45] flex items-center justify-between gap-4 focus:outline-none">
+                        <span>7. Posso fazer as lembrancinhas prontas para vender na minha igreja ou bairro?</span>
+                        <span class="text-[#C59B27] font-bold text-lg faq-icon">+</span>
+                    </button>
+                    <div class="faq-content hidden px-5 pb-4 text-sm text-gray-600 leading-relaxed border-t border-gray-200/60 pt-3">
+                        Pode sim! Você tem permissão total para imprimir, montar e vender as peças físicas prontas para gerar renda extra. A única proibição é revender ou distribuir os arquivos digitais em PDF.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CTA FINAL COM SELOS DISCRETOS -->
+    <section class="py-16 md:py-24 bg-[#162A45] text-white text-center border-t-2 border-[#C59B27]">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+            
+            <span class="text-xs font-bold uppercase tracking-widest text-[#F5CF64] border border-[#C59B27]/50 px-3.5 py-1 rounded-full bg-white/5 inline-block mb-4">
+                Decisão Consciente
+            </span>
+
+            <h2 class="font-cinzel text-2xl sm:text-3xl md:text-4xl font-bold text-white max-w-2xl mx-auto leading-tight">
+                Não deixe para a última hora o carinho que você pode preparar hoje
+            </h2>
+
+            <p class="mt-5 text-sm sm:text-base text-gray-200 leading-relaxed max-w-xl mx-auto">
+                O Natal e as celebrações da sua paróquia estão chegando. Por um valor simbólico — menor que um lanche — você garante um acervo completo para encantar sua comunidade, evangelizar com beleza e emocionar quem você ama com lembrancinhas feitas com propósito.
+            </p>
+
+            <p class="mt-4 text-xs sm:text-sm text-[#F5CF64] font-medium">
+                Clique no botão abaixo, escolha seu plano e comece a imprimir suas primeiras lembrancinhas em menos de 2 minutos:
+            </p>
+
+            <!-- Botão Padronizado de Ação Encorpado -->
+            <div class="mt-8 w-full flex justify-center">
+                <a href="#planos" class="cta-button w-full sm:w-auto max-w-xl">
+                    SIM! QUERO GARANTIR MINHAS LEMBRANCINHAS CATÓLICAS AGORA
+                </a>
+            </div>
+
+            <p class="text-xs text-gray-300 mt-3">
+                Acesso imediato após a confirmação • Pagamento 100% seguro
+            </p>
+
+            <!-- SELOS DE SEGURANÇA DISCRETOS EM LINHA ÚNICA -->
+            <div class="mt-10 pt-6 border-t border-white/10 w-full flex flex-wrap items-center justify-center gap-6 text-[11px] text-gray-300 font-medium">
+                <div class="inline-flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2" stroke-width="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-width="2"></path>
+                    </svg>
+                    <span>Ambiente Criptografado SSL</span>
+                </div>
+
+                <div class="inline-flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Envio Imediato via E-mail</span>
+                </div>
+
+                <div class="inline-flex items-center gap-1.5">
+                    <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <rect x="2" y="5" width="20" height="14" rx="2" stroke-width="2"></rect>
+                        <line x1="2" y1="10" x2="22" y2="10" stroke-width="2"></line>
+                    </svg>
+                    <span>Pix, Cartão e Boleto</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER LIMPO (SEM A FRASE REMOVIDA) -->
+    <footer class="bg-[#0F1E32] text-gray-400 py-8 border-t border-[#C59B27]/30 text-xs text-center">
+        <div class="max-w-4xl mx-auto px-4 space-y-3">
+            <p class="font-cinzel text-sm text-white font-bold tracking-wider">
+                Acervo de Moldes Católicos &bull; Nossas Senhoras & Menino Jesus
+            </p>
+            <div class="flex justify-center gap-6 text-[11px] text-gray-400 pt-1">
+                <a href="#planos" class="hover:text-[#F5CF64] transition-colors">Termos de Uso</a>
+                <a href="#planos" class="hover:text-[#F5CF64] transition-colors">Políticas de Privacidade</a>
+                <a href="#planos" class="hover:text-[#F5CF64] transition-colors">Suporte ao Aluno</a>
+            </div>
+            <p class="text-[11px] text-gray-500 pt-2">
+                &copy; Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA BAR -->
+    <aside aria-label="Ação rápida no celular" class="fixed bottom-0 left-0 right-0 z-40 bg-[#162A45]/95 backdrop-blur-md border-t border-[#C59B27]/40 p-3 md:hidden shadow-2xl">
+        <div class="flex items-center justify-between gap-3 max-w-md mx-auto">
+            <div class="text-left shrink-0">
+                <span class="text-[10px] text-[#F5CF64] uppercase font-bold block">Acesso Vitalício</span>
+                <span class="text-base font-extrabold text-white">R$ 24,90</span>
+            </div>
+            <a href="#planos" class="cta-button flex-1 text-center py-3 px-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-extrabold" style="min-height: 48px;">
+                Baixar Moldes Agora
+            </a>
+        </div>
+    </aside>
+
+    <!-- MODAL / POPUP DE UPSELL (PLANO COMPLETO POR R$ 19,99) -->
+    <div id="upsell-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="modal-card bg-white rounded-3xl border-2 border-[#C59B27] max-w-lg w-full overflow-hidden shadow-2xl relative text-center">
+            
+            <!-- Botão Fechar Modal (X) -->
+            <button type="button" id="btn-close-modal" aria-label="Fechar" class="absolute top-3.5 right-3.5 w-8 h-8 rounded-full bg-white/20 hover:bg-white/40 text-white flex items-center justify-center font-bold text-lg transition-colors z-20 focus:outline-none">
+                &times;
+            </button>
+
+            <!-- Top Header do Modal -->
+            <div class="bg-[#162A45] text-white pt-6 pb-5 px-6 border-b border-[#C59B27]/40 text-center relative">
+                <span class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-[#C59B27] text-[#162A45] font-extrabold text-[11px] uppercase tracking-wider mb-2">
+                    ⚠️ OPORTUNIDADE ÚNICA ANTES DE CONCLUIR
+                </span>
+                <h3 class="font-cinzel text-xl sm:text-2xl font-bold text-white leading-tight">
+                    Leve o <span class="text-[#F5CF64]">Plano Completo Vitalício</span> com Desconto Exclusivo!
+                </h3>
+            </div>
+
+            <!-- Corpo do Modal -->
+            <div class="p-6 sm:p-7 text-center">
+                
+                <p class="text-sm text-gray-700 leading-relaxed max-w-md mx-auto">
+                    Por apenas <strong class="text-[#162A45] bg-[#FAF8F5] px-2 py-0.5 rounded border border-[#C59B27]/40 font-bold">R$ 7,09 a mais</strong> do que o Plano Básico, você garante o <strong>Acesso Vitalício</strong> para sempre e leva todos os <strong>3 Bônus Especiais</strong> avaliados em R$ 120,00:
+                </p>
+
+                <!-- Lista de Benefícios do Upgrade -->
+                <div class="mt-4 bg-[#FAF8F5] rounded-2xl p-4 border border-[#C59B27]/25 text-left text-xs sm:text-sm space-y-2 text-gray-700">
+                    <div class="flex items-center gap-2 font-semibold text-[#162A45]">
+                        <span class="text-[#C59B27] font-bold text-base">✓</span>
+                        <span><strong>Acesso Vitalício:</strong> Baixe e imprima quando quiser para sempre</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#C59B27] font-bold text-base">✓</span>
+                        <span><strong>BÔNUS 1:</strong> Pack Etiquetas e Tags de Natal Cristão</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#C59B27] font-bold text-base">✓</span>
+                        <span><strong>BÔNUS 2:</strong> Cartões de Oração para Cantinho da Fé</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#C59B27] font-bold text-base">✓</span>
+                        <span><strong>BÔNUS 3:</strong> Guia de Lucro Rápido para Vender Kits</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-[#C59B27] font-bold text-base">✓</span>
+                        <span>Manual de Impressão + Atualizações Gratuitas com Novos Santos</span>
+                    </div>
+                </div>
+
+                <!-- Destaque de Preço Promocional do Upsell -->
+                <div class="mt-5 text-center">
+                    <span class="text-xs text-gray-500 block">De <span class="line-through text-gray-400">R$ 24,90</span> por apenas:</span>
+                    <div class="flex items-baseline justify-center gap-1 mt-1">
+                        <span class="text-lg font-bold text-[#C59B27]">R$</span>
+                        <span class="text-4xl sm:text-5xl font-black text-[#162A45]">19,99</span>
+                    </div>
+                    <span class="text-[11px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 inline-block mt-1">
+                        Economia imediata de R$ 124,91 no valor total
+                    </span>
+                </div>
+
+                <!-- Botão Principal de Upgrade -->
+                <div class="mt-6 flex flex-col items-center gap-3">
+                    <a href="#checkout-upsell" class="cta-button w-full shadow-xl text-center py-4 px-6 text-sm sm:text-base font-extrabold uppercase tracking-wider">
+                        SIM! QUERO O PLANO COMPLETO POR R$ 19,99
+                    </a>
+
+                    <!-- Link Secundário de Recusa -->
+                    <a href="#checkout-basico" id="btn-decline-upsell" class="text-xs sm:text-sm text-gray-500 hover:text-gray-800 underline text-center block font-medium transition-colors pt-1">
+                        Não, obrigado. Quero continuar apenas com o Plano Básico por R$ 12,90
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COUNTDOWN TIMER (HORÁRIO DE BRASÍLIA UTC-3), FAQ & UPSELL SCRIPT -->
+    <script>
+        // 1. Cronômetro dinâmico até 23:59:59 de hoje no Fuso de Brasília (UTC-3)
+        function updateBrasiliaCountdown() {
+            const nowUtc = Date.now();
+            const brOffsetMs = -3 * 60 * 60 * 1000; // Fuso UTC-3 (Brasília)
+            const brDate = new Date(nowUtc + brOffsetMs);
+            
+            const year = brDate.getUTCFullYear();
+            const month = brDate.getUTCMonth();
+            const day = brDate.getUTCDate();
+            
+            // 23:59:59.999 do dia atual em Brasília
+            const targetBrasiliaUtc = Date.UTC(year, month, day, 23, 59, 59, 999) - brOffsetMs;
+            
+            let diff = targetBrasiliaUtc - nowUtc;
+            if (diff < 0) {
+                diff = 0;
+            }
+            
+            const hours = Math.floor(diff / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            const pad = (n) => String(n).padStart(2, '0');
+            const formatted = `${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+            
+            document.querySelectorAll('.timer-display').forEach(el => {
+                el.textContent = formatted;
+            });
+        }
+        
+        setInterval(updateBrasiliaCountdown, 1000);
+        updateBrasiliaCountdown();
+
+        // 2. FAQ Accordion
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('.faq-icon');
+                const isOpen = !content.classList.contains('hidden');
+                
+                // Fecha todos os abertos
+                document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+                document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+                
+                if (!isOpen) {
+                    content.classList.remove('hidden');
+                    icon.textContent = '−';
+                }
+            });
+        });
+
+        // 3. Popup de Upsell no Plano Básico
+        const upsellModal = document.getElementById('upsell-modal');
+        const btnOpenUpsell = document.getElementById('btn-open-upsell');
+        const btnCloseModal = document.getElementById('btn-close-modal');
+        const btnDeclineUpsell = document.getElementById('btn-decline-upsell');
+
+        function openModal() {
+            upsellModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            upsellModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (btnOpenUpsell) {
+            btnOpenUpsell.addEventListener('click', (e) => {
+                e.preventDefault();
+                openModal();
+            });
+        }
+
+        if (btnCloseModal) {
+            btnCloseModal.addEventListener('click', closeModal);
+        }
+
+        // Fecha se clicar fora da caixa do modal
+        if (upsellModal) {
+            upsellModal.addEventListener('click', (e) => {
+                if (e.target === upsellModal) {
+                    closeModal();
+                }
+            });
+        }
+
+        // Fecha com a tecla ESC
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && upsellModal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
