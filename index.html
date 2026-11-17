@@ -134,6 +134,20 @@
             animation: marqueeScroll 18s linear infinite;
             will-change: transform;
         }
+        /* Animação do Card de Prêmio das 3 Portas */
+        @keyframes slideUpFade {
+            0% {
+                opacity: 0;
+                transform: translateY(24px) scale(0.96);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        .animate-slide-up {
+            animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
     </style>
 
 <script>
@@ -210,7 +224,112 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
         data-public-key="cmv8ssks300e3jy06tic3x562"
         data-auto-page-view="true"></script>
 </head>
-<body class="bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-[#C59B27] selection:text-white pt-12 sm:pt-14">
+<body class="bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-[#C59B27] selection:text-white">
+
+    <!-- 1. TELA CHEIA OBRIGATÓRIA: MINI-JOGO DAS 3 PORTAS DA SORTE (BOAS-VINDAS) -->
+    <section id="doors-minigame-screen" class="min-h-screen w-full flex flex-col items-center justify-center py-10 px-4 relative overflow-hidden bg-[#12081E] text-center select-none z-50">
+        <!-- Efeito sutil de brilho e malha sacra de fundo -->
+        <div class="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#C59B27_1.5px,transparent_1.5px)] [background-size:24px_24px]"></div>
+        <div class="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_50%_30%,rgba(147,51,234,0.18)_0%,rgba(18,8,30,0.95)_75%)]"></div>
+
+        <div class="max-w-2xl w-full mx-auto flex flex-col items-center relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#C59B27]/15 border border-[#C59B27]/40 text-[#F5CF64] text-xs sm:text-sm font-bold uppercase tracking-wider mb-4 shadow-sm">
+                <span>🎁</span> <span>MINI-JOGO DE BOAS-VINDAS</span>
+            </div>
+
+            <!-- Título Principal -->
+            <h1 class="font-cinzel text-2xl sm:text-3xl md:text-4xl font-extrabold text-white max-w-xl mx-auto leading-tight mb-3">
+                Escolha uma porta da sorte e desbloqueie seu cupom exclusivo de hoje!
+            </h1>
+
+            <!-- Subtítulo -->
+            <p class="text-sm sm:text-base text-gray-300 max-w-lg mx-auto font-normal mb-8">
+                Toque em uma das portas abaixo para revelar seu desconto especial antes de acessar o acervo.
+            </p>
+
+            <!-- Grid das 3 Portas da Sorte -->
+            <div id="doors-container" class="grid grid-cols-3 gap-3 sm:gap-6 w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto mb-4">
+                
+                <!-- Porta 1 (Roxa) -->
+                <button type="button" data-door="1" class="door-item relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl sm:rounded-3xl p-3 sm:p-5 flex flex-col items-center justify-between cursor-pointer transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-b from-[#A855F7] to-[#6B21A8] shadow-2xl border-2 border-white/20 focus:outline-none group">
+                    <div class="door-lock my-auto flex flex-col items-center">
+                        <div class="w-6 h-9 sm:w-7 sm:h-11 bg-gradient-to-b from-[#F5CF64] to-[#C59B27] rounded-md sm:rounded-lg shadow-md border border-[#FDE68A] flex items-center justify-center">
+                            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#162A45]" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="10" r="3"/>
+                                <path d="M10 12h4l1 6h-6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="door-result hidden my-auto flex-col items-center justify-center text-white">
+                        <span class="door-discount-text font-black text-xl sm:text-3xl md:text-4xl tracking-tight leading-none"></span>
+                    </div>
+                    <span class="door-label font-bold text-xs sm:text-sm uppercase tracking-wider text-white drop-shadow-sm">
+                        PORTA 1
+                    </span>
+                </button>
+
+                <!-- Porta 2 (Amarela/Dourada) -->
+                <button type="button" data-door="2" class="door-item relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl sm:rounded-3xl p-3 sm:p-5 flex flex-col items-center justify-between cursor-pointer transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-b from-[#F59E0B] to-[#B45309] shadow-2xl border-2 border-white/20 focus:outline-none group">
+                    <div class="door-lock my-auto flex flex-col items-center">
+                        <div class="w-6 h-9 sm:w-7 sm:h-11 bg-gradient-to-b from-[#F5CF64] to-[#C59B27] rounded-md sm:rounded-lg shadow-md border border-[#FDE68A] flex items-center justify-center">
+                            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#162A45]" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="10" r="3"/>
+                                <path d="M10 12h4l1 6h-6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="door-result hidden my-auto flex-col items-center justify-center text-white">
+                        <span class="door-discount-text font-black text-xl sm:text-3xl md:text-4xl tracking-tight leading-none"></span>
+                    </div>
+                    <span class="door-label font-bold text-xs sm:text-sm uppercase tracking-wider text-white drop-shadow-sm">
+                        PORTA 2
+                    </span>
+                </button>
+
+                <!-- Porta 3 (Azul) -->
+                <button type="button" data-door="3" class="door-item relative aspect-[3/4] sm:aspect-[4/5] rounded-2xl sm:rounded-3xl p-3 sm:p-5 flex flex-col items-center justify-between cursor-pointer transition-all duration-300 transform hover:scale-105 active:scale-95 bg-gradient-to-b from-[#3B82F6] to-[#1D4ED8] shadow-2xl border-2 border-white/20 focus:outline-none group">
+                    <div class="door-lock my-auto flex flex-col items-center">
+                        <div class="w-6 h-9 sm:w-7 sm:h-11 bg-gradient-to-b from-[#F5CF64] to-[#C59B27] rounded-md sm:rounded-lg shadow-md border border-[#FDE68A] flex items-center justify-center">
+                            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#162A45]" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="10" r="3"/>
+                                <path d="M10 12h4l1 6h-6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="door-result hidden my-auto flex-col items-center justify-center text-white">
+                        <span class="door-discount-text font-black text-xl sm:text-3xl md:text-4xl tracking-tight leading-none"></span>
+                    </div>
+                    <span class="door-label font-bold text-xs sm:text-sm uppercase tracking-wider text-white drop-shadow-sm">
+                        PORTA 3
+                    </span>
+                </button>
+            </div>
+
+            <!-- Card de Prêmio (Revelado ao escolher qualquer porta) -->
+            <div id="door-prize-card" class="hidden w-full max-w-md bg-white rounded-3xl p-6 sm:p-7 text-center shadow-2xl border-2 border-[#C59B27] animate-slide-up mx-auto">
+                <div class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-black uppercase tracking-wide mb-3">
+                    <span>🎉</span> <span>PARABÉNS! VOCÊ LIBEROU 70% DE DESCONTO!</span>
+                </div>
+                <h2 class="font-cinzel text-xl sm:text-2xl font-bold text-[#162A45] mb-2">
+                    70% de desconto liberado
+                </h2>
+                <div class="my-3">
+                    <span class="text-xs sm:text-sm text-gray-400 line-through">De R$ 85,90</span>
+                    <div class="text-3xl sm:text-4xl font-black text-[#162A45]">
+                        Por <span class="text-[#DC2626]">R$ 25,90</span>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-1">no Acervo Completo — pagamento único</p>
+                </div>
+                <button type="button" id="btn-unlock-landing" class="cta-button w-full mt-4 py-4 px-5 text-sm sm:text-base font-extrabold uppercase tracking-wider shadow-lg rounded-xl">
+                    Aplicar meu desconto de 70% e acessar os planos
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. LANDING PAGE PRINCIPAL (INICIALMENTE OCULTA COM DISPLAY: NONE) -->
+    <div id="main-landing-content" style="display: none;" class="pt-12 sm:pt-14">
 
     <!-- URGENCY TOP BAR (ÚNICO TIMER FIXO NO TOPO - BLOQUINHOS VERMELHOS) -->
     <aside aria-label="Aviso de urgência" class="fixed top-0 left-0 right-0 z-50 w-full bg-[#162A45] text-white py-1.5 sm:py-2 px-3 sm:px-4 text-center border-b border-[#C59B27]/40 shadow-md">
@@ -939,13 +1058,13 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
                             <p class="text-xs uppercase tracking-wider text-[#F5CF64] mt-1 font-semibold">Acervo Vitalício + Todos os Bônus</p>
                             
                             <div class="mt-4">
-                                <span class="text-xs text-gray-300 block">Investimento:</span>
+                                <span class="text-xs text-gray-300 block">De <span class="line-through text-gray-400">R$ 85,90</span> por apenas:</span>
                                 <div class="flex items-baseline justify-center gap-1 mt-1">
                                     <span class="text-lg font-bold text-[#F5CF64]">R$</span>
-                                    <span class="text-4xl font-extrabold text-white">24,90</span>
+                                    <span class="text-4xl font-extrabold text-white">25,90</span>
                                 </div>
                                 <span class="text-xs text-[#F5CF64] mt-1 block">
-                                    pagamento único (menos de R$ 0,83 por dia no primeiro mês)
+                                    pagamento único (70% de desconto liberado)
                                 </span>
                             </div>
                         </div>
@@ -984,7 +1103,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
                     </div>
 
                     <div class="pt-4 flex flex-col items-center">
-                        <a href="#checkout-completo" class="cta-button w-full max-w-md">
+                        <a href="https://app.zuptos.com.br/checkout/1782ede50e9820d6?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button w-full max-w-md">
                             QUERO O PLANO COMPLETO COM TODOS OS BÔNUS
                         </a>
                         <p class="text-[11px] text-gray-300 text-center mt-2">
@@ -1199,7 +1318,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
         <div class="flex items-center justify-between gap-3 max-w-md mx-auto">
             <div class="text-left shrink-0">
                 <span class="text-[10px] text-[#F5CF64] uppercase font-bold block">Acesso Vitalício</span>
-                <span class="text-base font-extrabold text-white">R$ 24,90</span>
+                <span class="text-base font-extrabold text-white">R$ 25,90</span>
             </div>
             <a href="#planos" class="cta-button flex-1 text-center py-3 px-4 rounded-xl text-xs sm:text-sm uppercase tracking-wider font-extrabold" style="min-height: 48px;">
                 Baixar Moldes Agora
@@ -1259,7 +1378,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 
                 <!-- Destaque de Preço Promocional do Upsell -->
                 <div class="mt-5 text-center">
-                    <span class="text-xs text-gray-500 block">De <span class="line-through text-gray-400">R$ 24,90</span> por apenas:</span>
+                    <span class="text-xs text-gray-500 block">De <span class="line-through text-gray-400">R$ 25,90</span> por apenas:</span>
                     <div class="flex items-baseline justify-center gap-1 mt-1">
                         <span class="text-lg font-bold text-[#C59B27]">R$</span>
                         <span class="text-4xl sm:text-5xl font-black text-[#162A45]">19,99</span>
@@ -1271,12 +1390,12 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 
                 <!-- Botão Principal de Upgrade -->
                 <div class="mt-6 flex flex-col items-center gap-3">
-                    <a href="#checkout-upsell" class="cta-button w-full shadow-xl text-center py-4 px-6 text-sm sm:text-base font-extrabold uppercase tracking-wider">
+                    <a href="https://app.zuptos.com.br/checkout/d82d6c01c8caf592?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" class="cta-button w-full shadow-xl text-center py-4 px-6 text-sm sm:text-base font-extrabold uppercase tracking-wider">
                         SIM! QUERO O PLANO COMPLETO POR R$ 19,99
                     </a>
 
                     <!-- Link Secundário de Recusa -->
-                    <a href="#checkout-basico" id="btn-decline-upsell" class="text-xs sm:text-sm text-gray-500 hover:text-gray-800 underline text-center block font-medium transition-colors pt-1">
+                    <a href="https://app.zuptos.com.br/checkout/bf213dd52b8fd460?utm_source=FB&utm_campaign={{campaign.name}}|{{campaign.id}}&utm_medium={{adset.name}}|{{adset.id}}&utm_content={{ad.name}}|{{ad.id}}&utm_term={{placement}}" id="btn-decline-upsell" class="text-xs sm:text-sm text-gray-500 hover:text-gray-800 underline text-center block font-medium transition-colors pt-1">
                         Não, obrigado. Quero continuar apenas com o Plano Básico por R$ 12,90
                     </a>
                 </div>
@@ -1284,6 +1403,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
             </div>
         </div>
     </div>
+    </div> <!-- /#main-landing-content (Landing Page Principal) -->
 
     <!-- COUNTDOWN TIMER (HORÁRIO DE BRASÍLIA UTC-3), FAQ & UPSELL SCRIPT -->
     <script>
@@ -1389,6 +1509,83 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
                 closeModal();
             }
         });
+
+        // 4. Mini-Jogo das 3 Portas da Sorte (Desbloqueio com Premiação Garantida 70% OFF)
+        (function initDoorsMinigame() {
+            const minigameScreen = document.getElementById('doors-minigame-screen');
+            const mainLanding = document.getElementById('main-landing-content');
+            const doorItems = document.querySelectorAll('.door-item');
+            const doorPrizeCard = document.getElementById('door-prize-card');
+            const btnUnlockLanding = document.getElementById('btn-unlock-landing');
+
+            if (!minigameScreen || !mainLanding || doorItems.length === 0) return;
+
+            let doorChosen = false;
+
+            doorItems.forEach(door => {
+                door.addEventListener('click', () => {
+                    if (doorChosen) return;
+                    doorChosen = true;
+
+                    // Descontos menores para as outras 2 portas
+                    const otherDiscounts = ['20% OFF', '35% OFF'];
+                    let otherIdx = 0;
+
+                    doorItems.forEach(d => {
+                        const lock = d.querySelector('.door-lock');
+                        const result = d.querySelector('.door-result');
+                        const discountText = d.querySelector('.door-discount-text');
+                        const label = d.querySelector('.door-label');
+
+                        if (lock) lock.classList.add('hidden');
+                        if (result) {
+                            result.classList.remove('hidden');
+                            result.classList.add('flex');
+                        }
+
+                        if (d === door) {
+                            // A porta clicada SEMPRE ganha 70% OFF com destaque dourado
+                            if (discountText) discountText.textContent = '70% OFF';
+                            d.classList.add('border-[#F5CF64]', 'ring-4', 'ring-[#F5CF64]', 'shadow-[0_0_35px_rgba(245,207,100,0.85)]', 'scale-105', 'z-10');
+                        } else {
+                            // As outras portas revelam descontos menores e ficam opacas
+                            if (discountText) {
+                                discountText.textContent = otherDiscounts[otherIdx++] || '15% OFF';
+                                discountText.classList.remove('text-xl', 'sm:text-3xl', 'md:text-4xl');
+                                discountText.classList.add('text-base', 'sm:text-xl', 'md:text-2xl', 'text-white/80');
+                            }
+                            if (label) label.classList.add('text-white/70');
+                            d.classList.add('opacity-40', 'scale-95');
+                        }
+                        d.style.pointerEvents = 'none';
+                    });
+
+                    // Revela o card de prêmio com animação
+                    if (doorPrizeCard) {
+                        doorPrizeCard.classList.remove('hidden');
+                        setTimeout(() => {
+                            doorPrizeCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                        }, 100);
+                    }
+                });
+            });
+
+            // Ação ao clicar no botão de aplicar desconto e ver o acervo
+            if (btnUnlockLanding) {
+                btnUnlockLanding.addEventListener('click', () => {
+                    minigameScreen.style.display = 'none';
+                    mainLanding.style.display = 'block';
+
+                    // Rola direto e suavemente para a seção de Planos (#planos)
+                    setTimeout(() => {
+                        const planos = document.getElementById('planos');
+                        if (planos) {
+                            planos.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }, 50);
+                });
+            }
+        })();
     </script>
 </body>
 </html>
