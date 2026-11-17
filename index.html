@@ -210,21 +210,36 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
         data-public-key="cmv8ssks300e3jy06tic3x562"
         data-auto-page-view="true"></script>
 </head>
-<body class="bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-[#C59B27] selection:text-white pt-11 sm:pt-12">
+<body class="bg-[#FAF8F5] text-gray-800 font-sans antialiased selection:bg-[#C59B27] selection:text-white pt-12 sm:pt-14">
 
-    <!-- URGENCY TOP BAR (ÚNICO TIMER FIXO NO TOPO) -->
-    <aside aria-label="Aviso de urgência" class="fixed top-0 left-0 right-0 z-50 w-full bg-[#162A45] text-white py-2.5 px-4 text-center border-b border-[#C59B27]/40 shadow-md">
+    <!-- URGENCY TOP BAR (ÚNICO TIMER FIXO NO TOPO - BLOQUINHOS VERMELHOS) -->
+    <aside aria-label="Aviso de urgência" class="fixed top-0 left-0 right-0 z-50 w-full bg-[#162A45] text-white py-1.5 sm:py-2 px-3 sm:px-4 text-center border-b border-[#C59B27]/40 shadow-md">
         <div class="max-w-4xl mx-auto flex items-center justify-center gap-2 sm:gap-3 flex-wrap text-xs sm:text-sm font-semibold">
-            <span class="inline-flex items-center gap-1.5 text-white">
-                ⏱️ Último dia para garantir
+            <span class="inline-flex items-center gap-1.5 text-white tracking-wide">
+                <span class="text-sm sm:text-base">⏱️</span>
+                <span class="font-bold">Último dia para garantir</span>
             </span>
-            <span class="text-[#C59B27]">•</span>
-            <div class="inline-flex items-center gap-1.5 bg-black/40 border border-[#C59B27]/50 px-2.5 py-0.5 rounded-full font-mono text-xs sm:text-sm text-[#F5CF64] tracking-wider font-bold">
-                <svg class="w-3.5 h-3.5 text-[#C59B27]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-                    <polyline points="12 6 12 12 16 14" stroke-width="2"></polyline>
-                </svg>
-                <span class="timer-display">00h 00m 00s</span>
+            <span class="text-[#C59B27]/80 hidden sm:inline">•</span>
+            
+            <!-- Timer em Bloquinhos com Destaque Vermelho Urgente -->
+            <div class="inline-flex items-center gap-1 sm:gap-1.5 font-mono select-none" aria-label="Tempo restante">
+                <!-- Horas -->
+                <div class="flex flex-col items-center">
+                    <span id="timer-hours" class="bg-[#DC2626] text-white font-black text-xs sm:text-sm px-1.5 sm:px-2 py-0.5 rounded shadow-sm min-w-[26px] sm:min-w-[30px] text-center leading-none">00</span>
+                    <span class="text-[8px] sm:text-[9px] text-gray-300 font-sans uppercase font-bold tracking-tight mt-0.5">HRS</span>
+                </div>
+                <span class="text-[#EF4444] font-black text-xs sm:text-sm -mt-2.5">:</span>
+                <!-- Minutos -->
+                <div class="flex flex-col items-center">
+                    <span id="timer-minutes" class="bg-[#DC2626] text-white font-black text-xs sm:text-sm px-1.5 sm:px-2 py-0.5 rounded shadow-sm min-w-[26px] sm:min-w-[30px] text-center leading-none">00</span>
+                    <span class="text-[8px] sm:text-[9px] text-gray-300 font-sans uppercase font-bold tracking-tight mt-0.5">MIN</span>
+                </div>
+                <span class="text-[#EF4444] font-black text-xs sm:text-sm -mt-2.5">:</span>
+                <!-- Segundos -->
+                <div class="flex flex-col items-center">
+                    <span id="timer-seconds" class="bg-[#DC2626] text-white font-black text-xs sm:text-sm px-1.5 sm:px-2 py-0.5 rounded shadow-sm min-w-[26px] sm:min-w-[30px] text-center leading-none">00</span>
+                    <span class="text-[8px] sm:text-[9px] text-gray-300 font-sans uppercase font-bold tracking-tight mt-0.5">SEG</span>
+                </div>
             </div>
         </div>
     </aside>
@@ -366,7 +381,7 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
 
     <!-- SECTION: O QUE VOCÊ VAI RECEBER -->
     <section class="py-16 md:py-24 bg-white border-y border-[#C59B27]/20">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             
             <div class="max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-bold uppercase tracking-widest text-[#C59B27] border border-[#C59B27]/40 px-3.5 py-1 rounded-full bg-[#FAF8F5] inline-block mb-3">
@@ -381,12 +396,13 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
                 <div class="w-16 h-0.5 bg-[#C59B27] mx-auto mt-4"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+            <!-- Grade Flexbox Centralizada e Proporcional (3 cards no topo, 2 cards centralizados abaixo) -->
+            <div class="flex flex-wrap justify-center items-stretch gap-6 text-center">
                 
                 <!-- Card 1 -->
-                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[340px] bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col justify-between items-center text-center">
+                    <div class="flex flex-col items-center w-full flex-grow">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4 shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="9" stroke-width="1.5"></circle>
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 7v10m-4-7h8"></path>
@@ -394,79 +410,79 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
                         </div>
                         <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Coleção Completa</span>
                         <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Todas as Nossas Senhoras</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
                             Modelos exclusivos homenageando as principais invocações marianas (Nossa Senhora Aparecida, Fátima, Graças, Carmo, Guadalupe, Nazaré e muito mais).
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Formato PDF A4 • Alta Resolução</span>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full mt-auto block">Formato PDF A4 • Alta Resolução</span>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[340px] bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col justify-between items-center text-center">
+                    <div class="flex flex-col items-center w-full flex-grow">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4 shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2l3 7h7l-5.5 4.5 2 7-6.5-5-6.5 5 2-7L2 9h7l3-7z"></path>
                             </svg>
                         </div>
                         <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Coleção Especial</span>
                         <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Natal do Menino Jesus</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
                             Lembrancinhas natalinas delicadas criadas para celebrar o verdadeiro sentido do Natal em família, na missa do galo ou nas confraternizações.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Ideal para a Missa do Galo</span>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full mt-auto block">Ideal para a Missa do Galo</span>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[340px] bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col justify-between items-center text-center">
+                    <div class="flex flex-col items-center w-full flex-grow">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4 shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
                             </svg>
                         </div>
                         <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Modelos Devocionais</span>
                         <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Mini Bíblias Devocionais</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
                             Pequenas réplicas encantadoras com mensagens bíblicas e orações prontas no interior. Montagem rápida com linhas demarcadas.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Montagem em ~3 Minutos</span>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full mt-auto block">Montagem em ~3 Minutos</span>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between">
-                    <div class="flex flex-col items-center">
-                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[340px] bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col justify-between items-center text-center">
+                    <div class="flex flex-col items-center w-full flex-grow">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4 shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 3h10a2 2 0 012 2v16l-7-4-7 4V5a2 2 0 012-2z"></path>
                             </svg>
                         </div>
                         <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Artes Exclusivas</span>
                         <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Marca-Páginas Católicos</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
                             Modelos elegantes com artes exclusivas e frases de fé para acompanhar bíblias, missais e livros de oração. Vários por página.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Econômico e Elegante</span>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full mt-auto block">Econômico e Elegante</span>
                 </div>
 
-                <!-- Card 5 (Dupla largura centralizado) -->
-                <div class="bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col items-center justify-between md:col-span-2 lg:col-span-2">
-                    <div class="flex flex-col items-center max-w-xl mx-auto">
-                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4">
+                <!-- Card 5 -->
+                <div class="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] max-w-[340px] bg-[#FAF8F5] rounded-2xl p-7 border border-[#C59B27]/30 delicate-shadow flex flex-col justify-between items-center text-center">
+                    <div class="flex flex-col items-center w-full flex-grow">
+                        <div class="w-12 h-12 rounded-full border border-[#C59B27] bg-white text-[#C59B27] flex items-center justify-center mb-4 shrink-0">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
                             </svg>
                         </div>
                         <span class="text-xs font-bold text-[#C59B27] uppercase tracking-wider mb-1">Moldes Práticos Estruturados</span>
                         <h3 class="font-cinzel text-lg font-bold text-[#162A45] mb-3">Caixinhas e Suportes para Mimos</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                        <p class="text-gray-600 text-sm leading-relaxed mb-6">
                             Moldes estruturados perfeitos para colocar bombons, terços ou mensagens de carinho. Fáceis de dobrar e encaixar, com linhas de vinco perfeitas.
                         </p>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full">Ideal para Terços e Doces</span>
+                    <span class="text-xs font-semibold text-gray-500 pt-3 border-t border-gray-200/80 w-full mt-auto block">Ideal para Terços e Doces</span>
                 </div>
 
             </div>
@@ -1294,10 +1310,19 @@ s.parentNode.insertBefore(t,s)}(window,document,'script',
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
             const pad = (n) => String(n).padStart(2, '0');
-            const formatted = `${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
+            const hStr = pad(hours);
+            const mStr = pad(minutes);
+            const sStr = pad(seconds);
             
+            const elHours = document.getElementById('timer-hours');
+            const elMinutes = document.getElementById('timer-minutes');
+            const elSeconds = document.getElementById('timer-seconds');
+            if (elHours) elHours.textContent = hStr;
+            if (elMinutes) elMinutes.textContent = mStr;
+            if (elSeconds) elSeconds.textContent = sStr;
+
             document.querySelectorAll('.timer-display').forEach(el => {
-                el.textContent = formatted;
+                el.textContent = `${hStr} : ${mStr} : ${sStr}`;
             });
         }
         
