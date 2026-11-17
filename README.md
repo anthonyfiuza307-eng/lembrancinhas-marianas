@@ -16,7 +16,11 @@ Landing page de alta conversão para venda do acervo de moldes em PDF de lembran
 
 ## ⚡ Atualizações Recentes
 
-1. **Mockup Transparente Integrado na Hero Section:**
+1. **Vitrine com Carrossel Automático (Auto-Play Real):**
+   - Posicionada logo após a seção "Acervo Completo" e do botão de ação.
+   - Carrossel compacto (`max-w-[820px]`) com auto-play de rotação contínua a cada 2,8s via JavaScript/CSS.
+   - Cards e imagens padronizados com altura uniforme (`object-fit: cover`), setas discretas, indicadores (dots) e suporte a arrasto/touch no celular.
+2. **Mockup Transparente Integrado na Hero Section:**
    - O mockup oficial está em formato PNG transparente ([`mockup-acervo.png`](file:///c:/Users/antho/OneDrive/Documentos/molde%20religioso/mockup-acervo.png)) sem caixa, sem borda e sem fundo preto, fundindo-se de forma 100% natural sobre a textura azul da Hero.
 2. **Único Timer Fixo no Topo:**
    - Barra fixa no topo (`position: fixed; top: 0; width: 100%`) com `⏱️ Último dia para garantir` e o contador regressivo em tempo real até 23:59:59 (fuso de Brasília). O timer duplicado interno foi removido e o espaçamento superior ajustado.
